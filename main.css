@@ -1369,17 +1369,14 @@ a:hover {
     gap: 15px; /* Відступ між кнопками */
 }
 
-
 .lang-toggle {
     margin: 10px;
-    position: fixed; /* Зафіксувати кнопку на екрані */
-    top: 20px;       /* Відступ від верхнього краю */
-    right: 20px;     /* Відступ від правого краю */
-    z-index: 9000;   /* Забезпечити, що кнопка завжди буде зверху */
-
-    /* Ваші існуючі стилі для кнопки */
-    font-size: 14px;
-    padding: 10px 15px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9000;
+    font-size: 14px; /* Розмір шрифту для ПК */
+    padding: 7px 12px; /* Внутрішній відступ для ПК */
     border-radius: 50px;
     background-color: var(--secondary-dark-bg);
     color: var(--text-light);
@@ -1507,6 +1504,13 @@ a:hover {
         font-size: 1em;
     }
 }
-/*
 
-
+/* Мобільні пристрої (екрани до 768px) */
+@media (max-width: 768px) {
+    .lang-toggle {
+        font-size: 12px; /* Зменшений розмір шрифту */
+        padding: 5px 10px; /* Зменшений внутрішній відступ */
+        top: 15px; /* Зменшений відступ зверху */
+        right: 15px; /* Зменшений відступ справа */
+    }
+}
