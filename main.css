@@ -638,7 +638,7 @@ a:hover {
 }
 
 .portfolio .ipa-label {
-  margin: -130px;
+    transform: translateY(-130px);
     box-shadow: var(--shadow-sm);
     border: 5px solid black;
     background-color: var(--highlight-gold);
@@ -1518,6 +1518,7 @@ a:hover {
         width: 20px; /* Зробіть лінії ще коротшими для вузьких екранів */
     }
 }
+
 
 
 
