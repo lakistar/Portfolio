@@ -1009,7 +1009,7 @@ a:hover {
 .contact-form .form-row {
     display: flex;
     gap: 20px;
-    flex-wrap: nowrap !important;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -1519,6 +1519,7 @@ a:hover {
         width: 20px; /* Зробіть лінії ще коротшими для вузьких екранів */
     }
 }
+
 
 
 
