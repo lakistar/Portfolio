@@ -1,3 +1,4 @@
+
 /* --- Root Variables (ВАШІ ІСНУЮЧІ ЗМІННІ) --- */
 :root {
     --primary-dark-bg: #0D0D16;
@@ -16,32 +17,7 @@
     --transition-fast: 0.2s;
     --transition-overlay: 0.4s ease-in-out;
 }
-/* Додайте цей код в кінець файлу main.css */
 
-/* Загальне правило для запобігання переповненню */
-body, html {
-  overflow-x: hidden;
-}
-
-/* Переконайтеся, що всі елементи не виходять за межі екрана */
-* {
-  box-sizing: border-box;
-}
-
-/* Адаптуємо секцію hero для мобільних пристроїв */
-@media (max-width: 767px) {
-    .hero-content {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-
-/* Робимо відступи в секції портфоліо адаптивними */
-@media (max-width: 767px) {
-    .portfolio-intro-text {
-        padding: 0 15px; /* Забезпечуємо відступи для мобільних пристроїв */
-    }
-}
 /* --- Basic Styles / Reset (ВАШІ ІСНУЮЧІ СТИЛІ) --- */
 * {
     margin: 0;
@@ -1545,13 +1521,6 @@ a:hover {
         width: 20px; /* Зробіть лінії ще коротшими для вузьких екранів */
     }
 }
-@media (max-width: 767px) {
-    .hero-content {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-
 
 
 
