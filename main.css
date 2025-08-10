@@ -23,7 +23,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html, body {
+    overflow-x: hidden;
+}
 body {
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
@@ -1010,7 +1012,6 @@ a:hover {
 .contact-form .form-row {
     display: flex;
     gap: 20px;
-    flex-wrap: nowrap !important;
     justify-content: space-between;
 }
 
@@ -1512,6 +1513,12 @@ a:hover {
         padding: 5px 10px; /* Зменшений внутрішній відступ */
         top: 15px; /* Зменшений відступ зверху */
         right: 15px; /* Зменшений відступ справа */
+    }
+}
+@media (max-width: 767px) {
+    .main-section-header .subtitle::before,
+    .main-section-header .subtitle::after {
+        width: 20px; /* Зробіть лінії ще коротшими для вузьких екранів */
     }
 }
 
