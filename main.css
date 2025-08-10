@@ -23,9 +23,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
-    overflow-x: hidden;
-}
 body {
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
@@ -1521,4 +1518,5 @@ a:hover {
         width: 20px; /* Зробіть лінії ще коротшими для вузьких екранів */
     }
 }
+
 
