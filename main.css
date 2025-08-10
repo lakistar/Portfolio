@@ -1374,7 +1374,7 @@ a:hover {
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 9000;
+    z-index: 99999;
     font-size: 14px; /* Розмір шрифту для ПК */
     padding: 7px 12px; /* Внутрішній відступ для ПК */
     border-radius: 50px;
@@ -1514,3 +1514,4 @@ a:hover {
         right: 15px; /* Зменшений відступ справа */
     }
 }
+
