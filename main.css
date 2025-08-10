@@ -39,7 +39,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
 
 }
-
+.aos-animate {
+    overflow-x: hidden;
+}
 /* --- Scroll to Top Button (ВАШІ ІСНУЮЧІ СТИЛІ) --- */
 #scrollToTopBtn {
     /* ... Ваші існуючі стилі для позиціонування та зовнішнього вигляду ... */
@@ -1518,6 +1520,7 @@ a:hover {
         width: 20px; /* Зробіть лінії ще коротшими для вузьких екранів */
     }
 }
+
 
 
 
