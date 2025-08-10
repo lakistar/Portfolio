@@ -1,242 +1,233 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Title -->
-  <title>Іра Костюк — Веб-Дизайнер</title>
+    <title>Іра Костюк — Веб-Дизайнер</title>
 
-  <!-- Meta SEO -->
-  <meta name="description" content="Іра Костюк — веб-дизайнерка. Створення адаптивних, красивих сайтів для бізнесу, брендів та особистих проєктів. UI/UX, SEO, індивідуальний підхід." />
-  <meta name="keywords" content="веб дизайн, ui/ux, Іра Костюк, портфоліо, створення сайтів, фріланс дизайнер, адаптивний дизайн, український вебдизайнер" />
-  <meta name="author" content="Іра Костюк" />
-  <link rel="canonical" href="https://lakistar.github.io/Portfolio" />
+    <meta name="description" content="Іра Костюк — веб-дизайнерка. Створення адаптивних, красивих сайтів для бізнесу, брендів та особистих проєктів. UI/UX, SEO, індивідуальний підхід." />
+  <meta name="keywords" content="веб дизайн, ui/ux, Іра Костюк, портфоліо, створення сайтів, фріланс дизайнер, адаптивний дизайн, український вебдизайнер" />
+  <meta name="author" content="Іра Костюк" />
+  <link rel="canonical" href="https://lakistar.github.io/Portfolio" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="code.png" type="image/png" />
-  <link rel="shortcut icon" href="code.png" type="image/png" />
+    <link rel="icon" href="code.png" type="image/png" />
+  <link rel="shortcut icon" href="code.png" type="image/png" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="main.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow" />
 </head>
 <body>
-  <button id="langToggleBtn" class="lang-toggle" aria-label="Переключити мову" aria-pressed="false">
-      <span class="lang-flag" aria-hidden="true"></span>
-      <span class="lang-label">UA</span>
-  </button>
-    <header class="header">
-      <div class="container">
-          <div class="logo">
-              <img id="pc-logo-img" src="code.png" alt="лого">
-          </div>
+  <button id="langToggleBtn" class="lang-toggle" aria-label="Переключити мову" aria-pressed="false">
+      <span class="lang-flag" aria-hidden="true"></span>
+      <span class="lang-label">UA</span>
+  </button>
+    <header class="header">
+      <div class="container">
+          <div class="logo" data-aos="zoom-in" data-aos-duration="600">
+              <img id="pc-logo-img" src="code.png" alt="лого">
+          </div>
 
-          <nav class="nav" id="main-nav">
-              <ul>
-                  <li><a href="#hero" data-i18n="nav-home">Головна</a></li>
-                  <li><a href="#about" data-i18n="nav-about">Про мене</a></li>
-                  <li><a href="#portfolio" data-i18n="nav-portfolio">Портфоліо</a></li>
-                  <li><a href="#skills" data-i18n="nav-skills">Навички</a></li>
-              </ul>
-          </nav>
-          <div class="header-actions">
-              <a href="#contact" class="btn header-btn" data-i18n="btn-contact">Написати</a>
-          </div>
-      </div>
-    </header>
+          <nav class="nav" id="main-nav" data-aos="fade-down" data-aos-duration="800">
+              <ul>
+                  <li><a href="#hero" data-i18n="nav-home">Головна</a></li>
+                  <li><a href="#about" data-i18n="nav-about">Про мене</a></li>
+                  <li><a href="#portfolio" data-i18n="nav-portfolio">Портфоліо</a></li>
+                  <li><a href="#skills" data-i18n="nav-skills">Навички</a></li>
+              </ul>
+          </nav>
+          <div class="header-actions" data-aos="fade-down" data-aos-duration="800">
+              <a href="#contact" class="btn header-btn" data-i18n="btn-contact">Написати</a>
+          </div>
+      </div>
+    </header>
 
-    <section id="hero" class="hero">
-        <div id="particles-js"></div>
-        <div class="container hero-content">
-            <div class="hero-text" data-aos="fade-up" data-aos-duration="800">
-                <h1 data-i18n="hero-title">Привіт, я Ірина Костюк!</h1>
-                <div class="typed-text-wrapper">
-                    <span id="typed-text" data-i18n="hero-typed"></span><span class="cursor"></span>
-                </div>
-                <p data-i18n="hero-paragraph">
-                  Привіт! Я створюю сучасні, адаптивні та стильні сайти для бізнесу, брендів і креативних проєктів.<br>
-                  Від лендінгів до повноцінних вебплатформ — я підходжу до кожного проєкту з увагою до деталей та любов’ю до дизайну.
-                </p>
-            </div>
-        </div>
-    </section>
+    <section id="hero" class="hero">
+        <div id="particles-js"></div>
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-up" data-aos-duration="800">
+                <h1 data-i18n="hero-title">Привіт, я Ірина Костюк!</h1>
+                <div class="typed-text-wrapper">
+                    <span id="typed-text" data-i18n="hero-typed"></span><span class="cursor"></span>
+                </div>
+                <p data-i18n="hero-paragraph">
+                  Привіт! Я створюю сучасні, адаптивні та стильні сайти для бізнесу, брендів і креативних проєктів.<br>
+                  Від лендінгів до повноцінних вебплатформ — я підходжу до кожного проєкту з увагою до деталей та любов’ю до дизайну.
+                </p>
+            </div>
+        </div>
+    </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <div class="main-section-header" data-aos="fade-up" data-aos-duration="600">
-                <p class="subtitle" data-i18n="about-subtitle">Що я пропоную</p>
-                <h2 data-i18n="about-h2">Наші Послуги</h2>
-            </div>
-            <div class="about-content">
-                <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" data-i18n="about-text">
-                  Я — вебдизайнер, який прагне створювати найкращі рішення для своїх клієнтів.
-                  Моя мета — перевершити ваші очікування та допомогти вам досягти успіху в онлайн-просторі.
-                  Я працюю індивідуально, з повною віддачею кожному проєкту, бо ваш результат — це і мій успіх.
-                </p>
-                <div class="services-grid">
-                    <div class="service-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
-                        <i class="fas fa-desktop"></i>
-                        <h3 data-i18n="service1-title">Веб-Розробка</h3>
-                        <p data-i18n="service1-desc">Створюю сучасні, швидкі та адаптивні сайти — від лендінгів до портфоліо та бізнес-сторінок.</p>
-                        <a href="project-details.html" class="read-more" data-i18n="read-more">Детальніше</a>
-                    </div>
-                    <div class="service-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
-                        <i class="fas fa-paint-brush"></i>
-                        <h3 data-i18n="service2-title">UI/UX Дизайн</h3>
-                        <p data-i18n="service2-desc">Розробляю інтерфейси, які поєднують зручність, стиль і логіку для кращого досвіду користувачів.</p>
-                        <a href="project-details.html" class="read-more" data-i18n="read-more">Детальніше</a>
-                    </div>
-                    <div class="service-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
-                        <i class="fas fa-bullhorn"></i>
-                        <h3 data-i18n="service3-title">Онлайн-Маркетинг</h3>
-                        <p data-i18n="service3-desc">Допоможу вашому сайту бути помітним: базова SEO-оптимізація, структура та впізнаваність.</p>
-                        <a href="project-details.html" class="read-more" data-i18n="read-more">Детальніше</a>
-                    </div>
-                </div>
-            </div>
-    </section>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="main-section-header" data-aos="fade-up" data-aos-duration="600">
+                <p class="subtitle" data-i18n="about-subtitle">Що я пропоную</p>
+                <h2 data-i18n="about-h2">Наші Послуги</h2>
+            </div>
+            <div class="about-content">
+                <p data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" data-i18n="about-text">
+                  Я — вебдизайнер, який прагне створювати найкращі рішення для своїх клієнтів.
+                  Моя мета — перевершити ваші очікування та допомогти вам досягти успіху в онлайн-просторі.
+                  Я працюю індивідуально, з повною віддачею кожному проєкту, бо ваш результат — це і мій успіх.
+                </p>
+                <div class="services-grid">
+                    <div class="service-item" data-aos="flip-up" data-aos-delay="100" data-aos-duration="500">
+                        <i class="fas fa-desktop"></i>
+                        <h3 data-i18n="service1-title">Веб-Розробка</h3>
+                        <p data-i18n="service1-desc">Створюю сучасні, швидкі та адаптивні сайти — від лендінгів до портфоліо та бізнес-сторінок.</p>
+                        <a href="project-details.html" class="read-more" data-i18n="read-more">Детальніше</a>
+                    </div>
+                    <div class="service-item" data-aos="flip-up" data-aos-delay="200" data-aos-duration="500">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3 data-i18n="service2-title">UI/UX Дизайн</h3>
+                        <p data-i18n="service2-desc">Розробляю інтерфейси, які поєднують зручність, стиль і логіку для кращого досвіду користувачів.</p>
+                        <a href="project-details.html" class="read-more" data-i18n="read-more">Детальніше</a>
+                    </div>
+                    <div class="service-item" data-aos="flip-up" data-aos-delay="300" data-aos-duration="500">
+                        <i class="fas fa-bullhorn"></i>
+                        <h3 data-i18n="service3-title">Онлайн-Маркетинг</h3>
+                        <p data-i18n="service3-desc">Допоможу вашому сайту бути помітним: базова SEO-оптимізація, структура та впізнаваність.</p>
+                        <a href="project-details.html" class="read-more" data-i18n="read-more">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+    </section>
 
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="main-section-header" data-aos="fade-up" data-aos-duration="600">
-                <p class="subtitle" data-i18n="portfolio-subtitle">Подивіться мої роботи</p>
-                <h2 data-i18n="portfolio-h2">Мої Проекти</h2>
-            </div>
-            <div data-aos="zoom-in" data-aos-duration="600">
-                <div data-i18n="ira-label" class="ipa-label">IPA</div>
-            </div>
-            <div class="cta-box" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
-                <p class="cta-text" data-i18n="cta-text">ПРОЕКТИ НА ЗАМОВЛЕННЯ!</p>
-            </div>
-            <h2 data-aos="fade-up" data-aos-delay="200" data-aos-duration="600" data-i18n="works-h2">Роботи</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
-                    <img src="1.png" alt="Проект 1">
-                    <div class="item-overlay">
-                        <h3>CoffeHouse</h3>
-                    </div>
-                    <a href="https://lakistar.github.io/CoffeHouse" target="_blank" class="overlay-link" aria-label="Перейти до Проекту 1"></a>
-                </div>
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">
-                    <img src="2.png" alt="Проект 2">
-                    <div class="item-overlay">
-                        <h3>Craftoria</h3>
-                    </div>
-                    <a href="https://lakistar.github.io/Craftoria/" target="_blank" class="overlay-link" aria-label="Перейти до Проекту 2"></a>
-                </div>
-                <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
-                    <img src="4.png" alt="Проект 3">
-                    <div class="item-overlay">
-                        <h3>CapturedMoments</h3>
-                    </div>
-                    <a href="https://lakistar.github.io/Captured-Moments/" target="_blank" class="overlay-link" aria-label="Перейти до Проекту 3"></a>
-                </div>
-            </div>
-            <p class="portfolio-intro-text" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" data-i18n="portfolio-intro">
-              Ви перебуваєте на сайті, на якому також показані мої вміння.
-            </p>
-        </div>
-    </section>
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="main-section-header" data-aos="fade-up" data-aos-duration="600">
+                <p class="subtitle" data-i18n="portfolio-subtitle">Подивіться мої роботи</p>
+                <h2 data-i18n="portfolio-h2">Мої Проекти</h2>
+            </div>
+            <div data-aos="zoom-in" data-aos-duration="600">
+                <div data-i18n="ira-label" class="ipa-label">IPA</div>
+            </div>
+            <div class="cta-box" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
+                <p class="cta-text" data-i18n="cta-text">ПРОЕКТИ НА ЗАМОВЛЕННЯ!</p>
+            </div>
+            <h2 data-aos="fade-up" data-aos-delay="200" data-aos-duration="600" data-i18n="works-h2">Роботи</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="500">
+                    <img src="1.png" alt="Проект 1">
+                    <div class="item-overlay">
+                        <h3>CoffeHouse</h3>
+                    </div>
+                    <a href="https://lakistar.github.io/CoffeHouse" target="_blank" class="overlay-link" aria-label="Перейти до Проекту 1"></a>
+                </div>
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="500">
+                    <img src="2.png" alt="Проект 2">
+                    <div class="item-overlay">
+                        <h3>Craftoria</h3>
+                    </div>
+                    <a href="https://lakistar.github.io/Craftoria/" target="_blank" class="overlay-link" aria-label="Перейти до Проекту 2"></a>
+                </div>
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="500">
+                    <img src="4.png" alt="Проект 3">
+                    <div class="item-overlay">
+                        <h3>CapturedMoments</h3>
+                    </div>
+                    <a href="https://lakistar.github.io/Captured-Moments/" target="_blank" class="overlay-link" aria-label="Перейти до Проекту 3"></a>
+                </div>
+            </div>
+            <p class="portfolio-intro-text" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600" data-i18n="portfolio-intro">
+              Ви перебуваєте на сайті, на якому також показані мої вміння.
+            </p>
+        </div>
+    </section>
 
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <div class="main-section-header" data-aos="fade-up" data-aos-duration="600">
-                <p class="subtitle" data-i18n="skills-subtitle">Мої Навички</p>
-                <h2 data-i18n="skills-h2">Мої Навички</h2>
-            </div>
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="main-section-header" data-aos="fade-up" data-aos-duration="600">
+                <p class="subtitle" data-i18n="skills-subtitle">Мої Навички</p>
+                <h2 data-i18n="skills-h2">Мої Навички</h2>
+            </div>
 
-            <div class="skills-content">
-                <div class="skills-text" data-aos="fade-up" data-aos-duration="600">
-                    <h3 data-i18n="skills-h3">Кожен день — новий виклик та можливість</h3>
-                    <p data-i18n="skills-p1">Я створюю унікальні сайти, які працюють на ваш успіх.<br> Моя мета — зробити ваш бізнес помітним та ефективним в онлайн-просторі.</p>
-                    <p data-i18n="skills-p2">Завдяки індивідуальному підходу та сучасним технологіям, я перетворюю ідеї у стильний і функціональний веб-дизайн, який залучає клієнтів і підвищує ваш дохід.</p>
-                    <a href="project-details.html" class="btn read-more-skills" data-i18n="read-more">Детальніше</a>
-                </div>
-                <div class="skills-bars" data-aos="fade-up" data-aos-duration="600">
-                    <div class="skill" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
-                        <span data-percent="90" data-i18n="skill1-title">Веб Дизайн</span>
-                        <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
-                    </div>
-                    <div class="skill" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
-                        <span data-percent="87" data-i18n="skill2-title">Веб Розробка</span>
-                        <div class="progress"><div class="progress-bar" style="width: 87%;"></div></div>
-                    </div>
-                    <div class="skill" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
-                        <span data-percent="78" data-i18n="skill3-title">Оптимізація продуктивності</span>
-                        <div class="progress"><div class="progress-bar" style="width: 78%;"></div></div>
-                    </div>
-                    <div class="skill" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
-                        <span data-percent="76" data-i18n="skill4-title">Кодування</span>
-                        <div class="progress"><div class="progress-bar" style="width: 76%;"></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <div class="skills-content">
+                <div class="skills-text" data-aos="zoom-in-up" data-aos-duration="600">
+                    <h3 data-i18n="skills-h3">Кожен день — новий виклик та можливість</h3>
+                    <p data-i18n="skills-p1">Я створюю унікальні сайти, які працюють на ваш успіх.<br> Моя мета — зробити ваш бізнес помітним та ефективним в онлайн-просторі.</p>
+                    <p data-i18n="skills-p2">Завдяки індивідуальному підходу та сучасним технологіям, я перетворюю ідеї у стильний і функціональний веб-дизайн, який залучає клієнтів і підвищує ваш дохід.</p>
+                    <a href="project-details.html" class="btn read-more-skills" data-i18n="read-more">Детальніше</a>
+                </div>
+                <div class="skills-bars" data-aos="fade-up" data-aos-duration="600">
+                    <div class="skill" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+                        <span data-percent="90" data-i18n="skill1-title">Веб Дизайн</span>
+                        <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">
+                        <span data-percent="87" data-i18n="skill2-title">Веб Розробка</span>
+                        <div class="progress"><div class="progress-bar" style="width: 87%;"></div></div>
+                    </div>
+                    <div class="skill" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">
+                        <span data-percent="78" data-i18n="skill3-title">Оптимізація продуктивності</span>
+                        <div class="progress"><div class="progress-bar" style="width: 78%;"></div></div>
+                    </div>
+                    <div class="skill" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
+                        <span data-percent="76" data-i18n="skill4-title">Кодування</span>
+                        <div class="progress"><div class="progress-bar" style="width: 76%;"></div></div>
+                    </div>
+                </div>
+        </div>
+    </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="main-section-header" data-aos="fade-up" data-aos-duration="600">
-              <p class="subtitle" data-i18n="contact-subtitle">Контакти</p>
-              <h2 data-i18n="contact-h2">Залишити Заявку або Задати Питання</h2>
-            </div>
-            <div class="contact-content">
-                <div class="contact-left" data-aos="fade-up" data-aos-duration="600">
-                    <h3 class="company-address-title" data-i18n="company-address-title">Комунікація</h3>
-                    <p class="company-address-text" data-i18n="company-address-text">Переважний спосіб зв'язку — особисті повідомлення на платформі.<br>За потреби доступна електронна пошта.</p>
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="main-section-header" data-aos="fade-up" data-aos-duration="600">
+              <p class="subtitle" data-i18n="contact-subtitle">Контакти</p>
+              <h2 data-i18n="contact-h2">Залишити Заявку або Задати Питання</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-left" data-aos="zoom-in" data-aos-duration="600">
+                    <h3 class="company-address-title" data-i18n="company-address-title">Комунікація</h3>
+                    <p class="company-address-text" data-i18n="company-address-text">Переважний спосіб зв'язку — особисті повідомлення на платформі.<br>За потреби доступна електронна пошта.</p>
 
-                    <div class="contact-detail-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
-                        <i class="fas fa-envelope"></i>
-                        <div class="detail-text">
-                            <h4 data-i18n="email-title">Email Адреса</h4>
-                            <p>ira.web.expert@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
+                    <div class="contact-detail-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+                        <i class="fas fa-envelope"></i>
+                        <div class="detail-text">
+                            <h4 data-i18n="email-title">Email Адреса</h4>
+                            <p>ira.web.expert@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="contact-right" data-aos="fade-up" data-aos-duration="600">
-                    <h3 class="contact-form-title" data-i18n="contact-form-title">Зв'яжіться з Нами</h3>
-                    <form class="contact-form" action="https://formsubmit.co/ira.web.expert@gmail.com" method="POST">
-                      <div class="form-row">
-                          <input type="text" name="name" data-i18n-placeholder="placeholder-name" placeholder="Ваше Ім'я" required>
-                          <input type="email" name="email" data-i18n-placeholder="placeholder-email" placeholder="Ваш Email" required>
-                      </div>
-                      <input type="text" name="subject" data-i18n-placeholder="placeholder-subject" placeholder="Тема (необов'язково)">
-                      <textarea name="message" data-i18n-placeholder="placeholder-message" placeholder="Ваше Повідомлення" rows="7" required></textarea>
-                      <button type="submit" class="btn contact-submit-btn" data-i18n="contact-submit-btn">Відправити Повідомлення</button>
+                <div class="contact-right" data-aos="fade-up" data-aos-duration="600">
+                    <h3 class="contact-form-title" data-i18n="contact-form-title">Зв'яжіться з Нами</h3>
+                    <form class="contact-form" action="https://formsubmit.co/ira.web.expert@gmail.com" method="POST">
+                      <div class="form-row">
+                          <input type="text" name="name" data-i18n-placeholder="placeholder-name" placeholder="Ваше Ім'я" required>
+                          <input type="email" name="email" data-i18n-placeholder="placeholder-email" placeholder="Ваш Email" required>
+                      </div>
+                      <input type="text" name="subject" data-i18n-placeholder="placeholder-subject" placeholder="Тема (необов'язково)">
+                      <textarea name="message" data-i18n-placeholder="placeholder-message" placeholder="Ваше Повідомлення" rows="7" required></textarea>
+                      <button type="submit" class="btn contact-submit-btn" data-i18n="contact-submit-btn">Відправити Повідомлення</button>
 
-                      <input type="hidden" name="_captcha" value="false">
-                      <input type="hidden" name="_next" value="https://lakistar.github.io/Portfolio/index.html">
-                      <input type="hidden" name="_template" value="box">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+                      <input type="hidden" name="_captcha" value="false">
+                      <input type="hidden" name="_next" value="https://lakistar.github.io/Portfolio/index.html">
+                      <input type="hidden" name="_template" value="box">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer class="footer" data-aos="fade-up" data-aos-duration="800">
-        <div class="container">
-            <p data-i18n="footer-text">&copy; 2025 IRA WEB DEVELOPER. Всі права захищені.</p>
-        </div>
-    </footer>
+    <footer class="footer" data-aos="fade-up" data-aos-duration="800">
+        <div class="container">
+            <p data-i18n="footer-text">&copy; 2025 IRA WEB DEVELOPER. Всі права захищені.</p>
+        </div>
+    </footer>
 
-    <button id="scrollToTopBtn" title="Нагору"><i class="fas fa-arrow-up"></i></button>
+    <button id="scrollToTopBtn" title="Нагору"><i class="fas fa-arrow-up"></i></button>
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script src="language.js"></script>
-    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="language.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
-
-
-
