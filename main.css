@@ -1520,6 +1520,12 @@ a:hover {
         width: 20px; /* Зробіть лінії ще коротшими для вузьких екранів */
     }
 }
+@media (max-width: 767px) {
+    .hero-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
 
 
 
