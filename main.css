@@ -1361,3 +1361,144 @@ a:hover {
         right: 15px;
     }
 }
+/* ===== Language toggle button ===== */
+/* Додайте до файлу main.css */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Відступ між кнопками */
+}
+
+/* Якщо вам потрібно, щоб кнопка перемикання мови була більш стилізованою */
+.lang-toggle {
+    /* Додайте стилі з вашої другої сторінки для кнопки */
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: var(--secondary-dark-bg);
+    color: var(--text-light);
+    border: 1px solid var(--highlight-gold);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.lang-toggle:hover {
+    background-color: var(--highlight-gold);
+    color: var(--primary-dark-bg);
+}
+
+.lang-flag {
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+.info-page-wrapper {
+    max-width: 800px;
+    margin: 80px auto 40px auto;
+    padding: 20px;
+    background-color: var(--secondary-dark-bg);
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+    color: var(--text-light);
+}
+
+.info-page-wrapper h1 {
+    font-size: 2.5em;
+    color: #FFD700;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.info-page-wrapper h2 {
+    font-size: 1.8em;
+    color: var(--text-light);
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.info-page-wrapper p {
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: var(--text-muted);
+}
+
+.info-page-wrapper ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color: var(--text-muted);
+}
+
+.info-page-wrapper ul li {
+    margin-bottom: 8px;
+}
+
+.back-button-container {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    background-color: transparent;
+    border: 2px solid var(--highlight-gold);
+    border-radius: 25px;
+    padding: 10px 25px;
+    color: var(--text-light);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s ease-in-out, border 0.4s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: var(--shadow-sm);
+}
+
+.back-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--highlight-gold);
+    transition: width 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.back-button:hover {
+    color: var(--primary-dark-bg);
+    border: 2px solid transparent;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.back-button:hover::before {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .info-page-wrapper {
+        margin: 40px 15px 20px 15px;
+        padding: 15px;
+    }
+    .info-page-wrapper h1 {
+        font-size: 2em;
+    }
+    .info-page-wrapper p {
+        font-size: 1em;
+    }
+}
