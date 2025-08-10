@@ -1,43 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Іра Костюк — Детальніше про послуги</title>
 
-  <title>Details</title>
+    <meta name="description" content="Портфоліо Іри Костюк — веб-дизайнерки. Створення сучасних, адаптивних та SEO-оптимізованих сайтів для бізнесу, брендів і творчих проєктів.">
+    <meta name="keywords" content="вебдизайн, створення сайтів, UI/UX дизайн, адаптивний дизайн, веб-дизайнер Україна, Іра Костюк, портфоліо дизайнера, фріланс дизайнер">
+    <meta name="author" content="Іра Костюк">
+    <link rel="canonical" href="https://lakistar.github.io/Portfolio">
 
-  <meta name="description" content="Ira Kostiuk's portfolio — a web designer. Creating modern, responsive, and SEO-optimized websites for businesses, brands, and creative projects.">
-  <meta name="keywords" content="web design, website creation, UI/UX design, responsive design, web designer Ukraine, Ira Kostiuk, designer portfolio, freelance designer">
-  <meta name="author" content="Ira Kostiuk">
-  <link rel="canonical" href="https://lakistar.github.io/Portfolio">
+    <link rel="icon" href="code.png" type="image/png">
+    <link rel="shortcut icon" href="code.png" type="image/png">
 
-  <link rel="icon" href="code.png" type="image/png">
-  <link rel="shortcut icon" href="code.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
-        /* Additional styles for this page, if needed */
+/* Додаткові стилі для цієї сторінки, щоб текст відображався */
         .info-page-wrapper {
-            max-width: 800px; /* Limit text width for better readability */
-            margin: 80px auto 40px auto; /* Top margin so text isn't at the top of the screen, and centering */
+            max-width: 800px;
+            margin: 80px auto 40px auto;
             padding: 20px;
-            background-color: var(--secondary-dark-bg); /* Use secondary dark background */
+            background-color: var(--secondary-dark-bg);
             border-radius: 8px;
-            box-shadow: var(--shadow-md); /* Add shadow */
-            color: var(--text-light); /* Text color */
+            box-shadow: var(--shadow-md);
+            color: var(--text-light);
         }
 
         .info-page-wrapper h1 {
             font-size: 2.5em;
-            color: #FFD700; /* Accent color for the heading */
+            color: #FFD700;
             margin-bottom: 25px;
             text-align: center;
         }
@@ -53,7 +51,7 @@
             font-size: 1.1em;
             line-height: 1.7;
             margin-bottom: 15px;
-            color: var(--text-muted); /* Muted color for main text */
+            color: var(--text-muted);
         }
 
         .info-page-wrapper ul {
@@ -72,12 +70,13 @@
             margin-top: 40px;
             margin-bottom: 20px;
         }
+
+        /* Стилі для кнопки */
         .back-button {
             background-color: transparent;
-            border: 2px solid var(--highlight-gold); /* Use variable for gold */
+            border: 2px solid var(--highlight-gold);
             border-radius: 25px;
             padding: 10px 25px;
-            /* margin-left: 30px; - this margin might be better removed if the button is single and centered */
             color: var(--text-light);
             position: relative;
             overflow: hidden;
@@ -85,12 +84,12 @@
             transition: color 0.4s ease-in-out, border 0.4s ease-in-out;
             cursor: pointer;
             text-decoration: none;
-            display: inline-flex; /* Changed to inline-flex for easy icon and text centering */
-            align-items: center; /* Vertically centers icon and text */
-            gap: 8px; /* Space between icon and text */
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             font-weight: 600;
             text-transform: uppercase;
-            box-shadow: var(--shadow-sm); /* Added shadow to make it look like a button */
+            box-shadow: var(--shadow-sm);
         }
 
         .back-button::before {
@@ -108,15 +107,15 @@
         .back-button:hover {
             color: var(--primary-dark-bg);
             border: 2px solid transparent;
-            transform: translateY(-2px); /* Add slight lift on hover */
-            box-shadow: var(--shadow-md); /* Shadow becomes more pronounced */
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
         }
 
         .back-button:hover::before {
             width: 100%;
         }
 
-        /* Media query for responsiveness */
+        /* Медіа-запит для адаптивності */
         @media (max-width: 768px) {
             .info-page-wrapper {
                 margin: 40px 15px 20px 15px;
@@ -132,51 +131,64 @@
     </style>
 </head>
 <body style="background-color: var(--primary-dark-bg);">
+
+    <header class="header">
+        <div class="container">
+
+            <div class="header-actions">
+                <button id="langToggleBtn" class="lang-toggle" aria-label="Переключити мову" aria-pressed="false">
+                    <span class="lang-flag" aria-hidden="true"></span>
+                    <span class="lang-label">UA</span>
+                </button>
+            </div>
+        </div>
+    </header>
     <main>
-      <section class="info-page-wrapper">
-    <h1 data-aos="fade-down">My Services and Expertise Level</h1>
-    <p data-aos="fade-right" data-aos-delay="100">On this page, you will find detailed information about the range of my professional services, the depth of my knowledge in key technologies, and my approach to project implementation. My goal is to transform your ideas into functional, attractive, and scalable web applications.</p>
+        <section class="info-page-wrapper">
+            <h1 data-aos="fade-down" data-i18n="info-h1">Мої Послуги та Рівень Експертизи</h1>
+            <p data-aos="fade-right" data-aos-delay="100" data-i18n="info-p1">На цій сторінці ви знайдете розгорнуту інформацію про спектр моїх професійних послуг, глибину знань у ключових технологіях та мій підхід до реалізації проектів. Моя мета – перетворити ваші ідеї на функціональні, привабливі та масштабовані веб-додатки.</p>
 
-    <h2 data-aos="fade-right" data-aos-delay="200">Detailed Service Description</h2>
-    <p data-aos="fade-up" data-aos-delay="300">I offer comprehensive solutions for creating web projects of any complexity, from concept development to implementation and ongoing support. My goal is to ensure high quality, efficiency, and an innovative approach to every task.</p>
-    <ul data-aos="fade-up" data-aos-delay="400">
-        <li><strong>Full-Cycle Website Development:</strong> Creating unique, high-performance websites from simple landing pages to complex corporate portals and E-commerce solutions, with an emphasis on UX/UI.</li>
-        <li><strong>Frontend Development:</strong> Building interactive and visually appealing user interfaces using modern technologies (HTML5, CSS3, JavaScript, React.js). Ensuring cross-browser compatibility and responsive design.</li>
-        <li><strong>Performance Optimization & SEO:</strong> Adjusting website loading speed and performance to improve user experience, increase search engine rankings, and overall efficiency.</li>
-    </ul>
+            <h2 data-aos="fade-right" data-aos-delay="200" data-i18n="info-h2-1">Детальний Опис Послуг</h2>
+            <p data-aos="fade-up" data-aos-delay="300" data-i18n="info-p2">Я пропоную комплексні рішення для створення веб-проектів будь-якої складності, від розробки концепції до впровадження та подальшої підтримки. Моя ціль – забезпечити високу якість, ефективність та інноваційний підхід до кожного завдання.</p>
+            <ul data-aos="fade-up" data-aos-delay="400">
+                <li data-i18n="info-li1"><strong>Розробка Веб-Сайтів "Під Ключ":</strong> Створення унікальних, високопродуктивних сайтів від простих лендінгів до складних корпоративних порталів та E-commerce рішень, з акцентом на UX/UI.</li>
+                <li data-i18n="info-li2"><strong>Фронтенд Розробка:</strong> Розбудова інтерактивних та візуально привабливих інтерфейсів користувача з використанням сучасних технологій (HTML5, CSS3, JavaScript, React.js). Забезпечення кросбраузерності та адаптивного дизайну.</li>
+                <li data-i18n="info-li3"><strong>Оптимізація Продуктивності та SEO:</strong> Налагодження швидкості завантаження та роботи сайту для покращення користувацького досвіду, підвищення позицій у пошукових системах та загальної ефективності.</li>
+            </ul>
 
-    <h2 data-aos="fade-right" data-aos-delay="500">My Skill Level and Technologies</h2>
-    <p data-aos="fade-up" data-aos-delay="600">My expertise covers key web development technologies and tools, allowing me to create reliable and scalable solutions that meet the highest quality standards. I constantly learn and adapt to new industry trends to always offer relevant and effective approaches.</p>
-    <ul data-aos="fade-up" data-aos-delay="700">
-        <li><strong>Frontend Technologies:</strong> Proficient in HTML5, CSS3, JavaScript (ES6+, asynchronous code, API integration), React.js (or Vue.js/Angular if needed).</li>
-        <li><strong>Backend Fundamentals & Databases:</strong> Understanding of backend development principles, ability to work with RESTful APIs, and basic experience with databases, if required for integration.</li>
-        <li><strong>Tools & Methodologies:</strong> Confident use of version control systems (Git, GitHub), automation tools, and an understanding of Agile/Scrum methodologies for effective teamwork.</li>
-    </ul>
+            <h2 data-aos="fade-right" data-aos-delay="500" data-i18n="info-h2-2">Мій Рівень Вмінь та Технології</h2>
+            <p data-aos="fade-up" data-aos-delay="600" data-i18n="info-p3">Моя експертиза охоплює ключові технології та інструменти веб-розробки, що дозволяє мені створювати надійні та масштабовані рішення, відповідаючи найвищим стандартам якості. Я постійно навчаюсь та адаптуюсь до нових трендів індустрії, щоб завжди пропонувати актуальні та ефективні підходи.</p>
+            <ul data-aos="fade-up" data-aos-delay="700">
+                <li data-i18n="info-li4"><strong>Фронтенд Технології:</strong> Досконале володіння HTML5, CSS3, JavaScript (ES6+, асинхронний код, робота з API), React.js (або Vue.js/Angular за потреби).</li>
+                <li data-i18n="info-li5"><strong>Бекенд Основи та Бази Даних:</strong> Розуміння принципів бекенд-розробки, вміння працювати з RESTful API та базовий досвід з базами даних, якщо це необхідно для інтеграції.</li>
+                <li data-i18n="info-li6"><strong>Інструменти та Методології:</strong> Впевнене використання систем контролю версій (Git, GitHub), інструментів автоматизації, а також розуміння Agile/Scrum методологій для ефективної командної роботи.</li>
+            </ul>
 
-    <p data-aos="fade-up" data-aos-delay="800">I approach each project with an individual approach, attention to detail, and a commitment to ensuring not only functionality but also an exceptional user experience. My goal is to create solutions that truly bring value.</p>
+            <p data-aos="fade-up" data-aos-delay="800" data-i18n="info-p4">Я підходжу до кожного проекту з індивідуальним підходом, увагою до деталей та прагненням забезпечити не лише функціональність, а й винятковий користувацький досвід. Моя мета – створювати рішення, які дійсно приносять цінність.</p>
 
-    <div class="back-button-container" data-aos="zoom-in" data-aos-delay="900">
-        <a href="javascript:history.back()" class="back-button">
-            <i class="fas fa-arrow-left"></i> Back
-        </a>
-    </div>
-</section>
+            <div class="back-button-container" data-aos="fade-up" data-aos-delay="900">
+                <a href="index.html" class="back-button" data-i18n="back-to-home-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    Повернутися на головну
+                </a>
+            </div>
+        </section>
     </main>
 
-    <footer class="footer"    data-aos="fade-up" data-aos-duration="800">
+    <footer class="footer" data-aos="fade-up" data-aos-duration="800">
         <div class="container">
-            <p>&copy; 2025 IRA WEB DEVELOPER. All rights reserved.</p>
+            <p data-i18n="footer-text">&copy; 2025 IRA WEB DEVELOPER. Всі права захищені.</p>
         </div>
     </footer>
 
+    <script src="language.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
-        // === ADDED: AOS Initialization ===
         AOS.init({
-            duration: 1000, // Global animation duration (in ms)
-            once: true,    // Whether animations should only play once when scrolling down
+            duration: 800,
+            once: true
         });
     </script>
-
 </body>
 </html>
