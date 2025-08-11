@@ -40,9 +40,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 
 }
-.aos-animate {
-    overflow-x: hidden;
-}
+
 /* --- Scroll to Top Button (ВАШІ ІСНУЮЧІ СТИЛІ) --- */
 #scrollToTopBtn {
     /* ... Ваші існуючі стилі для позиціонування та зовнішнього вигляду ... */
@@ -626,7 +624,9 @@ a:hover {
     margin-right: auto;
     /* Або коротше: margin: 0 auto 30px auto; */
 }
+
 .portfolio {
+
     padding: 80px 0;
     text-align: center;
     background: var(--primary-dark-bg);
@@ -1521,10 +1521,3 @@ a:hover {
         width: 20px; /* Зробіть лінії ще коротшими для вузьких екранів */
     }
 }
-
-
-
-
-
-
-
