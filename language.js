@@ -21,7 +21,7 @@ const translations = {
     'nav-portfolio': { uk: 'Портфоліо', en: 'Portfolio' },
     'nav-skills': { uk: 'Навички', en: 'Skills' },
     'btn-contact': { uk: 'Написати', en: 'Contact' },
-    'hero-title': { uk: 'Привіт, я Ірина Костюк!', en: 'Hi, I\'m Iryna Kostiuk!' },
+    'hero-title': { uk: 'Привіт, я Дмитро Петренко!', en: 'Hi, I\'m Dmytro Petrenko!' },
     'hero-typed': { uk: "Я веб-дизайнерка та фронтенд-розробниця", en: "I'm a Web Designer & Frontend Developer" },
     'hero-paragraph': { uk: 'Привіт! Я створюю сучасні, адаптивні та стильні сайти для бізнесу, брендів і креативних проєктів.<br>Від лендінгів до повноцінних вебплатформ — я підходжу до кожного проєкту з увагою до деталей та любов’ю до дизайну.', en: 'Hi! I create modern, responsive, and stylish websites for businesses, brands, and creative projects.<br>From landing pages to full web platforms — I approach every project with attention to detail and a love for design.' },
     'about-subtitle': { uk: 'Що я пропоную', en: 'What I Offer' },
@@ -36,7 +36,7 @@ const translations = {
     'read-more': { uk: 'Детальніше', en: 'Read more' },
     'portfolio-subtitle': { uk: 'Подивіться мої роботи', en: 'Check out my work' },
     'portfolio-h2': { uk: 'Мої Проекти', en: 'My Projects' },
-    'ira-label': { uk: 'ІРА', en: 'IRA' },
+    'ira-label': { uk: 'ДМИТРО', en: 'DMYTRO' },
     'cta-text': { uk: 'ПРОЕКТИ НА ЗАМОВЛЕННЯ!', en: 'CUSTOM PROJECTS!' },
     'works-h2': { uk: 'Роботи', en: 'Works' },
     'portfolio-intro': { uk: 'Ви перебуваєте на сайті, на якому також показані мої вміння.', en: 'You are on a site that also showcases my skills.' },
@@ -60,7 +60,7 @@ const translations = {
     'placeholder-subject': { uk: 'Тема (необов\'язково)', en: 'Subject (optional)' },
     'placeholder-message': { uk: 'Ваше Повідомлення', en: 'Your Message' },
     'contact-submit-btn': { uk: 'Відправити Повідомлення', en: 'Send Message' },
-    'footer-text': { uk: '&copy; 2025 IRA WEB DEVELOPER. Всі права захищені.', en: '&copy; 2025 IRA WEB DEVELOPER. All rights reserved.' }
+    'footer-text': { uk: '&copy; 2025 DMYTRO WEB DEVELOPER. Всі права захищені.', en: '&copy; 2025 DMYTRO WEB DEVELOPER. All rights reserved.' }
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -117,3 +117,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     initLang();
 });
+
